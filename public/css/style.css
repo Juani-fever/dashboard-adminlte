@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f5;
+    margin: 0;
+    padding: 20px;
+    color: #111;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+/* TITULOS */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* BOTONES */
+.btn {
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 5px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-warning {
+    background-color: #facc15;
+    color: black;
+}
+
+.btn-danger {
+    background-color: #ef4444;
+    color: white;
+}
+
+/* LISTA */
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* menos espacio */
+}
+
+/* ITEM */
+.item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* FOTO MINI */
+.foto {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* INFO */
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+/* ACCIONES */
+.acciones {
+    display: flex;
+    align-items: center;
+}
+
+/* DETALLE */
+.detalle {
+    text-align: center;
+}
+
+.detalle img {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* FORMULARIOS */
+.form-group {
+    margin-bottom: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+/* TARJETAS */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+/* HEADER */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* INFO PRINCIPAL */
+.card-info {
+    display: flex;
+    align-items: center;
+}
+
+.card-info img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+/* DETALLE OCULTO */
+.card-body {
+    margin-top: 10px;
+    display: none;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+/* CUANDO ESTA ABIERTO */
+.card.active .card-body {
+    display: block;
+}
