@@ -12,7 +12,7 @@ class EstudianteController extends Controller
      */
     public function index()
     {
-        $estudiantes = Estudiante::all();
+        $estudiantes = Estudiante::with('clase')->get();
         return view('estudiantes_crud.index', compact('estudiantes'));
     }
 
