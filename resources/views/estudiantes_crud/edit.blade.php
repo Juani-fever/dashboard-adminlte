@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Detalle</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-</head>
-<body>
+@extends('layouts.admin')
+
+@section('title', 'Dashboard de Estudiantes')
+
+@section('content')
     
 <h1>Editar Estudiante</h1>
 
@@ -46,3 +43,5 @@
     <a href="{{ route('estudiantes.index') }}" class="btn">Cancelar</a>
 
 </form>
+
+@endsection

@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Estudiantes</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-</head>
-<body>
+@extends('layouts.admin')
+
+@section('title', 'Dashboard de Estudiantes')
+
+@section('content')
 
 <div class="container">
 
@@ -59,5 +56,4 @@
 
 </div>
 
-</body>
-</html>
+@endsection
